@@ -5,8 +5,7 @@ const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Career", href: "#career" },
-  { label: "Achievements", href: "#achievements" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "KMCC", href: "#kmcc" },
   { label: "Media", href: "#media" },
   { label: "Contact", href: "#contact" },
 ];
@@ -46,7 +45,9 @@ const Navigation = () => {
             e.preventDefault();
             handleNavClick("#home");
           }}
-          className="font-serif text-xl md:text-2xl font-semibold text-primary"
+          className={`font-serif text-xl md:text-2xl font-semibold transition-colors ${
+            isScrolled ? "text-primary" : "text-white"
+          }`}
         >
           Hassenar <span className="text-accent">Kunnummal</span>
         </a>
@@ -61,7 +62,9 @@ const Navigation = () => {
                 e.preventDefault();
                 handleNavClick(link.href);
               }}
-              className="nav-link text-sm font-medium tracking-wide uppercase"
+              className={`text-sm font-medium tracking-wide uppercase transition-colors hover:text-accent ${
+                isScrolled ? "text-foreground/80" : "text-white/80 hover:text-white"
+              }`}
             >
               {link.label}
             </a>
@@ -71,7 +74,9 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="lg:hidden p-2 text-primary"
+          className={`lg:hidden p-2 transition-colors ${
+            isScrolled ? "text-primary" : "text-white"
+          }`}
           aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
