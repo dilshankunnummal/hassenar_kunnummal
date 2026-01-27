@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Users, Heart } from "lucide-react";
+import { GraduationCap, Heart, Users, Calendar, MapPin } from "lucide-react";
 
 const educationTimeline = [
   { year: "Primary", title: "AM LP School Palathingal" },
@@ -13,7 +13,7 @@ const educationTimeline = [
 ];
 
 const familyMembers = [
-  { name: "Sajla Koormath", role: "Wife" },
+  { name: "Sajla Koormath", role: "Spouse" },
   { name: "Fathima Nasli", role: "Daughter" },
   { name: "Irene Aysha", role: "Daughter" },
   { name: "Ines Maryam", role: "Daughter" },
@@ -33,6 +33,33 @@ const AboutSection = () => {
           <div className="divider-gold mx-auto" />
         </div>
 
+        {/* Personal Details Card */}
+        <div className="max-w-2xl mx-auto mb-16">
+          <div className="card-elegant p-8 text-center">
+            <h3 className="text-2xl font-serif font-semibold text-primary mb-6">Personal Details</h3>
+            <div className="flex flex-col sm:flex-row justify-center gap-8">
+              <div className="flex items-center justify-center gap-3">
+                <div className="p-3 bg-accent/10 rounded-full">
+                  <Calendar className="w-5 h-5 text-accent" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-muted-foreground">Date of Birth</p>
+                  <p className="font-medium text-foreground">11 April 1971</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-3">
+                <div className="p-3 bg-accent/10 rounded-full">
+                  <MapPin className="w-5 h-5 text-accent" />
+                </div>
+                <div className="text-left">
+                  <p className="text-sm text-muted-foreground">Native Place</p>
+                  <p className="font-medium text-foreground">Moonniyur, Chuzhali, Kerala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Education Timeline */}
           <div>
@@ -41,7 +68,7 @@ const AboutSection = () => {
                 <GraduationCap className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-2xl font-serif font-semibold text-primary">
-                Education & Leadership
+                Education & Early Leadership
               </h3>
             </div>
             
@@ -66,9 +93,8 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Family & Values */}
-          <div className="space-y-8">
-            {/* Family Card */}
+          {/* Family */}
+          <div>
             <div className="card-elegant p-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 bg-accent/10 rounded-xl">
@@ -94,23 +120,6 @@ const AboutSection = () => {
                   </div>
                 ))}
               </div>
-            </div>
-
-            {/* Origin Card */}
-            <div className="card-elegant p-8 bg-gradient-to-br from-primary to-navy-dark text-primary-foreground">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-3 bg-white/10 rounded-xl">
-                  <Award className="w-6 h-6 text-accent" />
-                </div>
-                <h3 className="text-xl font-serif font-semibold">
-                  Roots & Heritage
-                </h3>
-              </div>
-              <p className="text-primary-foreground/80 leading-relaxed">
-                Originally from Moonniyur, Chuzhali, Kerala, Hassenar carries the rich 
-                cultural heritage of his homeland while making an impact globally through 
-                his culinary expertise and community leadership.
-              </p>
             </div>
           </div>
         </div>
