@@ -26,7 +26,7 @@ const ContactSection = () => {
               <Phone className="w-6 h-6 text-accent" />
             </div>
             <h3 className="font-serif font-semibold mb-2">Phone</h3>
-            <p className="text-primary-foreground/70">+44 XXX XXX XXXX</p>
+            <p className="text-primary-foreground/70">+44 00447875635131</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
@@ -34,7 +34,7 @@ const ContactSection = () => {
               <Mail className="w-6 h-6 text-accent" />
             </div>
             <h3 className="font-serif font-semibold mb-2">Email</h3>
-            <p className="text-primary-foreground/70">hassenar@example.com</p>
+            <p className="text-primary-foreground/70">nasliya4u@gmail.com</p>
           </div>
           
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/15 transition-colors">
@@ -47,26 +47,45 @@ const ContactSection = () => {
         </div>
 
         {/* Social Links */}
-        <div className="text-center">
-          <p className="text-primary-foreground/70 mb-6">Follow on Social Media</p>
-          <div className="flex items-center justify-center gap-4">
-            {[
-              { icon: Facebook, label: "Facebook" },
-              { icon: Instagram, label: "Instagram" },
-              { icon: Twitter, label: "Twitter" },
-              { icon: Linkedin, label: "LinkedIn" },
-            ].map((social, index) => (
-              <a
-                key={index}
-                href="#"
-                className="w-12 h-12 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all hover:scale-110"
-                aria-label={social.label}
-              >
-                <social.icon className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
-        </div>
+<div className="text-center">
+  <p className="text-primary-foreground/70 mb-6">Follow on Social Media</p>
+  <div className="flex items-center justify-center gap-4">
+    {[
+      {
+        icon: Facebook,
+        label: "Facebook",
+        url: "https://www.facebook.com/hassenarkunnummal",
+      },
+      {
+        icon: Instagram,
+        label: "Instagram",
+        url: "https://www.instagram.com/hassenarkunnummal",
+      },
+      {
+        icon: Twitter,
+        label: "Twitter",
+        url: "https://twitter.com/hassenarkunnummal",
+      },
+      {
+        icon: Linkedin,
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/hassenarkunnummal",
+      },
+    ].map((social, index) => (
+      <a
+        key={index}
+        href={social.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-12 h-12 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition-all hover:scale-110"
+        aria-label={social.label}
+      >
+        <social.icon className="w-5 h-5" />
+      </a>
+    ))}
+  </div>
+</div>
+
       </div>
     </section>
   );
