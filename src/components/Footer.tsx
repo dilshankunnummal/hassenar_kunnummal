@@ -7,7 +7,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Hassenar Kunnummal. All rights reserved.
           </p>
           <p className="text-sm">
-            Professional Chef & Community Leader
+            Professional Chef & Britain KMCC President
           </p>
         </div>
       </div>

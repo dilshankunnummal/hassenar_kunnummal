@@ -1,6 +1,7 @@
 import { FileText, Newspaper, ExternalLink } from "lucide-react";
 
-const FULL_NEWSPAPER_PDF = "https://drive.google.com/file/d/1S1larfNrFgaoAudftpYFVH7z2w2w9USO/view";
+// const FULL_NEWSPAPER_PDF = "https://drive.google.com/file/d/1S1larfNrFgaoAudftpYFVH7z2w2w9USO/view";
+const FULL_NEWSPAPER_PDF = "https://drive.google.com/file/d/1XZn10dYC0xDQ9uU0AJRvjixIDV0DOXuj/view?usp=sharing";
 
 const MediaSection = () => {
   return (
