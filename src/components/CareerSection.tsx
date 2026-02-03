@@ -10,6 +10,13 @@ import news2 from "@/assets/news-2.jpg";
 import news3 from "@/assets/news-3.jpg";
 import news4 from "@/assets/news-4.jpg";
 import news5 from "@/assets/news-5.jpg";
+//new image
+import news6 from "@/assets/news-6.jpg";
+import career1 from "@/assets/career-1.jpg";
+import career2 from "@/assets/career-2.jpg";
+import career3 from "@/assets/career-3.jpg";
+import career4 from "@/assets/career-4.jpg";
+// new image
 
 const careerImages = [
   { src: achievement4, alt: "Career Image 1" },
@@ -22,6 +29,11 @@ const careerImages = [
   { src: news3, alt: "Career Image 8" },
   { src: news4, alt: "Career Image 9" },
   { src: news5, alt: "Career Image 10" },
+   { src: news6, alt: "Career Image 11" },
+  { src: career1, alt: "Career Image 12" },
+  { src: career2, alt: "Career Image 13" },
+  { src: career3, alt: "Career Image 14" },
+  { src: career4, alt: "Career Image 15" },
 ];
 
 const awardDishes = [
